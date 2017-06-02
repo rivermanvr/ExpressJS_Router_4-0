@@ -2,11 +2,15 @@
   "name": "ExpressJS_Router_4-0_VR",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "rivermanvr",
+  "license": "ISC",
+  "repository": "https://github.com/rivermanvr/ExpressJS_Router_4-0.git",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
