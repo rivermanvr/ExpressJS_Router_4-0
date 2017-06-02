@@ -10,13 +10,21 @@ const port = process.env.PORT || 3000;
 //ROUTES
 //----------------------------------------
 
-//sample route
-app.get('/sample', (req, res, next) => {
-  res.send('This is our sample route');
+//get an instance of router:
+const router = express.Router();
+
+//routes
+router.get('/', (req, res, next) => {
+  res.send('We are on the Home Page');
 });
 
-//more routes here
+router.get('/about', (req, res, next) => {
+  res.send('We are on the About Page');
+});
 
+//This is our middleware which will
+//apply routes to our application:
+app.use('/', router);
 
 //START THE SERVER
 //----------------------------------------
